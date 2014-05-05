@@ -3,8 +3,8 @@
 <ivysettings>
   <resolvers>
     <url name="public">
-      <ivy pattern="http://myrobotlab.googlecode.com/svn/trunk/myrobotlab/thirdParty/repo/[organisation]/[module]/[revision]/ivy.xml" />
-      <artifact pattern="http://myrobotlab.googlecode.com/svn/trunk/myrobotlab/thirdParty/repo/[organisation]/[module]/[revision]/[artifact].[ext]" />
+      <ivy pattern="https://github.com/MyRobotLab/repo/raw/master/[organisation]/[module]/[revision]/ivy.xml" />
+      <artifact pattern="https://github.com/MyRobotLab/repo/raw/master/[organisation]/[module]/[revision]/[artifact].[ext]" />
     </url>
   </resolvers>
 </ivysettings>
