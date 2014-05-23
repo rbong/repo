@@ -3,7 +3,7 @@
     <info organisation="com.pi4j.pi4j" module="pi4j" status="release" revision="0.0.5">
     </info>
     <configurations>
-        <include url="http://myrobotlab.googlecode.com/svn/trunk/myrobotlab/thirdParty/repo/ivyconfigurations.xml"/>
+        <include url="https://raw.githubusercontent.com/MyRobotLab/repo/master/ivyconfigurations.xml"/>
     </configurations>
     <publications>
         <artifact name="pi4j-core" type="jar"/>

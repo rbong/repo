@@ -3,7 +3,7 @@
     <info organisation="org.simpleframework.xml" module="xml" status="release" revision="2.7">
     </info>
     <configurations>
-        <include url="http://myrobotlab.googlecode.com/svn/trunk/myrobotlab/thirdParty/repo/ivyconfigurations.xml"/>
+        <include url="https://raw.githubusercontent.com/MyRobotLab/repo/master/ivyconfigurations.xml"/>
     </configurations>
     <publications>
         <artifact name="simple-xml-2.7" type="jar" conf="*"/>
