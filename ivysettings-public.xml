@@ -1,6 +1,5 @@
-<!-- refer to : http://ant.apache.org/ivy/history/2.2.0/tutorial/defaultconf.html 
--->
 <ivysettings>
+<!-- refer to : http://ant.apache.org/ivy/history/2.2.0/tutorial/defaultconf.html -->
   <resolvers>
     <url name="public">
       <ivy pattern="https://cdn.rawgit.com/MyRobotLab/repo/master/[organisation]/[revision]/ivy.xml" />
