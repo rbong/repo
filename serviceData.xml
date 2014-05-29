@@ -1,4 +1,4 @@
-<serviceData>
+<ServiceData>
    <serviceTypes>
       <serviceType name="org.myrobotlab.service.ACEduinoMotorShield" description="ACEduino Motor Shield for Arduino">
          <dependencies>
@@ -310,58 +310,60 @@
          </dependencies>
       </serviceType>
    </serviceTypes>
-   <categories name="actuators">
-      <serviceTypes>org.myrobotlab.service.Motor</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.Servo</serviceTypes>
-   </categories>
-   <categories name="audio">
-      <serviceTypes>org.myrobotlab.service.AudioCapture</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.AudioFile</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.JFugue</serviceTypes>
-   </categories>
-   <categories name="display">
-      <serviceTypes>org.myrobotlab.service.GUIService</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.WebGUI</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.VideoStreamer</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.ThingSpeak</serviceTypes>
-   </categories>
-   <categories name="intelligence">
-      <serviceTypes>org.myrobotlab.service.CleverBot</serviceTypes>
-   </categories>
-   <categories name="microcontroller">
-      <serviceTypes>org.myrobotlab.service.Arduino</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.Propeller</serviceTypes>
-   </categories>
-   <categories name="network">
-      <serviceTypes>org.myrobotlab.service.RemoteAdapter</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.InMoov</serviceTypes>
-   </categories>
-   <categories name="programming">
-      <serviceTypes>org.myrobotlab.service.Python</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.Java</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.GUIService</serviceTypes>
-   </categories>
-   <categories name="robots">
-      <serviceTypes>org.myrobotlab.service.Houston</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.InMoov</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.Plantoid</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.Roomba</serviceTypes>
-   </categories>
-   <categories name="simulators">
-      <serviceTypes>org.myrobotlab.service.SLAMBad</serviceTypes>
-   </categories>
-   <categories name="speech recognition">
-      <serviceTypes>org.myrobotlab.service.Sphinx</serviceTypes>
-   </categories>
-   <categories name="speech synthesis">
-      <serviceTypes>org.myrobotlab.service.Speech</serviceTypes>
-   </categories>
-   <categories name="vision">
-      <serviceTypes>org.myrobotlab.service.OpenCV</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.OpenNI</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.IPCamera</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.Tracking</serviceTypes>
-      <serviceTypes>org.myrobotlab.service.TopCodes</serviceTypes>
+   <categories>
+      <category name="actuators">
+         <serviceTypes>org.myrobotlab.service.Motor</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Servo</serviceTypes>
+      </category>
+      <category name="audio">
+         <serviceTypes>org.myrobotlab.service.AudioCapture</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.AudioFile</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.JFugue</serviceTypes>
+      </category>
+      <category name="display">
+         <serviceTypes>org.myrobotlab.service.GUIService</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.WebGUI</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.VideoStreamer</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.ThingSpeak</serviceTypes>
+      </category>
+      <category name="intelligence">
+         <serviceTypes>org.myrobotlab.service.CleverBot</serviceTypes>
+      </category>
+      <category name="microcontroller">
+         <serviceTypes>org.myrobotlab.service.Arduino</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Propeller</serviceTypes>
+      </category>
+      <category name="network">
+         <serviceTypes>org.myrobotlab.service.RemoteAdapter</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InMoov</serviceTypes>
+      </category>
+      <category name="programming">
+         <serviceTypes>org.myrobotlab.service.Python</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Java</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.GUIService</serviceTypes>
+      </category>
+      <category name="robots">
+         <serviceTypes>org.myrobotlab.service.Houston</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InMoov</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Plantoid</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Roomba</serviceTypes>
+      </category>
+      <category name="simulators">
+         <serviceTypes>org.myrobotlab.service.SLAMBad</serviceTypes>
+      </category>
+      <category name="speech recognition">
+         <serviceTypes>org.myrobotlab.service.Sphinx</serviceTypes>
+      </category>
+      <category name="speech synthesis">
+         <serviceTypes>org.myrobotlab.service.Speech</serviceTypes>
+      </category>
+      <category name="vision">
+         <serviceTypes>org.myrobotlab.service.OpenCV</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.OpenNI</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.IPCamera</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Tracking</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.TopCodes</serviceTypes>
+      </category>
    </categories>
    <thirdPartyLibs>
       <lib org="be.hogent.tarsos" revision="1.7" resolved="false" released="true"/>
@@ -401,4 +403,4 @@
       <lib org="ph.com.alexan.aceduino" revision="1.0" resolved="false" released="true"/>
       <lib org="wiiuse.wiimote" revision="0.12b" resolved="false" released="true"/>
    </thirdPartyLibs>
-</serviceData>
+</ServiceData>
