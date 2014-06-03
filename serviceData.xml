@@ -152,6 +152,21 @@
             <org>org.jivesoftware.smack</org>
          </dependencies>
       </serviceType>
+      <serviceType name="org.myrobotlab.service.InMoovTorso" description="torso service for the InMoov robot">
+         <dependencies>
+            <org>com.sun.speech.freetts</org>
+            <org>org.apache.commons.httpclient</org>
+            <org>javax.speech.recognition</org>
+            <org>com.googlecode.javacv</org>
+            <org>net.sourceforge.opencv</org>
+            <org>edu.cmu.sphinx</org>
+            <org>gnu.io.rxtx</org>
+            <org>cc.arduino</org>
+            <org>com.googlecode.simpleopenni</org>
+            <org>javazoom.jl.player</org>
+            <org>org.jivesoftware.smack</org>
+         </dependencies>
+      </serviceType>
       <serviceType name="org.myrobotlab.service.InverseKinematics" description="Service to calculate InverseKinematics of a 2 joints robot arm, on a rotating base"/>
       <serviceType name="org.myrobotlab.service.JFugue" description="music and tone generation service">
          <dependencies>
@@ -314,28 +329,51 @@
       <category name="actuators">
          <serviceTypes>org.myrobotlab.service.Motor</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Servo</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.MouthControl</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.PID</serviceTypes>
       </category>
       <category name="audio">
          <serviceTypes>org.myrobotlab.service.AudioCapture</serviceTypes>
          <serviceTypes>org.myrobotlab.service.AudioFile</serviceTypes>
          <serviceTypes>org.myrobotlab.service.JFugue</serviceTypes>
       </category>
+      <category name="communication">
+         <serviceTypes>org.myrobotlab.service.RemoteAdapter</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.XMPP</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Serial</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.ParallelPort</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.HTTPClient</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.WebGUI</serviceTypes>
+      </category>
+      <category name="control">
+         <serviceTypes>org.myrobotlab.service.AWTRobot</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Keyboard</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Joystick</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InverseKinematics</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.PID</serviceTypes>
+      </category>
       <category name="display">
          <serviceTypes>org.myrobotlab.service.GUIService</serviceTypes>
          <serviceTypes>org.myrobotlab.service.WebGUI</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Log</serviceTypes>
          <serviceTypes>org.myrobotlab.service.VideoStreamer</serviceTypes>
          <serviceTypes>org.myrobotlab.service.ThingSpeak</serviceTypes>
       </category>
       <category name="intelligence">
          <serviceTypes>org.myrobotlab.service.CleverBot</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.ChessGame</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.TesseractOCR</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.WolframAlpha</serviceTypes>
       </category>
       <category name="microcontroller">
          <serviceTypes>org.myrobotlab.service.Arduino</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.BeagleBoardBlack</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Propeller</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.RasPi</serviceTypes>
       </category>
-      <category name="network">
-         <serviceTypes>org.myrobotlab.service.RemoteAdapter</serviceTypes>
-         <serviceTypes>org.myrobotlab.service.InMoov</serviceTypes>
+      <category name="motors">
+         <serviceTypes>org.myrobotlab.service.AdafruitMotorShield</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Motor</serviceTypes>
       </category>
       <category name="programming">
          <serviceTypes>org.myrobotlab.service.Python</serviceTypes>
@@ -345,19 +383,49 @@
       <category name="robots">
          <serviceTypes>org.myrobotlab.service.Houston</serviceTypes>
          <serviceTypes>org.myrobotlab.service.InMoov</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InMoovHead</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InMoovHand</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InMoovArm</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InMoovTorso</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Plantoid</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Roomba</serviceTypes>
+      </category>
+      <category name="security">
+         <serviceTypes>org.myrobotlab.service.Security</serviceTypes>
+      </category>
+      <category name="sensors">
+         <serviceTypes>org.myrobotlab.service.Arduino</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.PointCloud</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.SensorMonitor</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Wii</serviceTypes>
+      </category>
+      <category name="shields">
+         <serviceTypes>org.myrobotlab.service.ACEduinoMotorShield</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Adafruit16CServoDriver</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.AdafruitMotorShield</serviceTypes>
       </category>
       <category name="simulators">
          <serviceTypes>org.myrobotlab.service.SLAMBad</serviceTypes>
       </category>
+      <category name="social">
+         <serviceTypes>org.myrobotlab.service.Twitter</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Drupal</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.CleverBot</serviceTypes>
+      </category>
       <category name="speech recognition">
          <serviceTypes>org.myrobotlab.service.Sphinx</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.GoogleSTT</serviceTypes>
       </category>
       <category name="speech synthesis">
          <serviceTypes>org.myrobotlab.service.Speech</serviceTypes>
       </category>
+      <category name="timers">
+         <serviceTypes>org.myrobotlab.service.Clock</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Cron</serviceTypes>
+      </category>
       <category name="vision">
+         <serviceTypes>org.myrobotlab.service.Cortex</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.GestureRecognition</serviceTypes>
          <serviceTypes>org.myrobotlab.service.OpenCV</serviceTypes>
          <serviceTypes>org.myrobotlab.service.OpenNI</serviceTypes>
          <serviceTypes>org.myrobotlab.service.IPCamera</serviceTypes>
@@ -367,40 +435,40 @@
    </categories>
    <thirdPartyLibs>
       <lib org="be.hogent.tarsos" revision="1.7" resolved="false" released="true"/>
-      <lib org="cc.arduino" revision="1.0" resolved="false" released="true"/>
-      <lib org="com.adafruit.motorshield" revision="1.0" resolved="false" released="true"/>
-      <lib org="com.adafruit.servodriver" revision="1.0" resolved="false" released="true"/>
-      <lib org="com.google.gson" revision="2.2.4" resolved="false" released="true"/>
-      <lib org="com.googlecode.chatterbot" revision="1.2.1" resolved="false" released="true"/>
-      <lib org="com.googlecode.javacv" revision="0.6" resolved="false" released="true"/>
-      <lib org="com.googlecode.simpleopenni" revision="1.96" resolved="false" released="true"/>
-      <lib org="com.pi4j.pi4j" revision="0.0.5" resolved="false" released="true"/>
-      <lib org="com.strobel.decompiler" revision="0.3.2" resolved="false" released="true"/>
-      <lib org="com.sun.java3d" revision="1.5.1" resolved="false" released="true"/>
-      <lib org="com.sun.jna" revision="3.2.2" resolved="false" released="true"/>
-      <lib org="com.sun.speech.freetts" revision="1.2" resolved="false" released="true"/>
-      <lib org="com.wolfram.alpha" revision="1.1" resolved="false" released="true"/>
-      <lib org="edu.cmu.sphinx" revision="4-1.0beta6" resolved="false" released="true"/>
-      <lib org="edu.northwestern.topcodes" revision="1.0" resolved="false" released="true"/>
-      <lib org="gnu.io.rxtx" revision="2.1-7r2" resolved="false" released="true"/>
-      <lib org="it.sauronsoftware.cron4j" revision="2.2.5" resolved="false" released="true"/>
-      <lib org="javaFlacEncoder.FLAC_FileEncoder" revision="0.1" resolved="false" released="true"/>
-      <lib org="javax.speech.recognition" revision="1.0" resolved="false" released="true"/>
-      <lib org="javax.vecmath" revision="1.5.1" resolved="false" released="true"/>
-      <lib org="javazoom.jl.player" revision="1.0.1" resolved="false" released="true"/>
-      <lib org="net.java.games.jinput" revision="20120914" resolved="false" released="true"/>
-      <lib org="net.sourceforge.opencv" revision="2.4.6" resolved="false" released="true"/>
-      <lib org="net.sourceforge.tess4j" revision="1.1" resolved="false" released="true"/>
-      <lib org="org.apache.commons.httpclient" revision="4.2.5" resolved="false" released="true"/>
-      <lib org="org.drjava.java" revision="20120818" resolved="false" released="true"/>
-      <lib org="org.java_websocket.websocket" revision="1.2" resolved="false" released="true"/>
-      <lib org="org.jfugue.music" revision="4.0.3" resolved="false" released="true"/>
-      <lib org="org.jivesoftware.smack" revision="3.3.0" resolved="false" released="true"/>
-      <lib org="org.op.chess" revision="1.0.0" resolved="false" released="true"/>
-      <lib org="org.python.core" revision="2.5.2" resolved="false" released="true"/>
-      <lib org="org.tritonus.share.sampled.floatsamplebuffer" revision="0.3.6" resolved="false" released="true"/>
-      <lib org="org.twitter4j.twitter" revision="3.0.5" resolved="false" released="true"/>
-      <lib org="ph.com.alexan.aceduino" revision="1.0" resolved="false" released="true"/>
-      <lib org="wiiuse.wiimote" revision="0.12b" resolved="false" released="true"/>
+      <lib org="cc.arduino" revision="1.0" resolved="true" released="true"/>
+      <lib org="com.adafruit.motorshield" revision="1.0" resolved="true" released="true"/>
+      <lib org="com.adafruit.servodriver" revision="1.0" resolved="true" released="true"/>
+      <lib org="com.google.gson" revision="2.2.4" resolved="true" released="true"/>
+      <lib org="com.googlecode.chatterbot" revision="1.2.1" resolved="true" released="true"/>
+      <lib org="com.googlecode.javacv" revision="0.6" resolved="true" released="true"/>
+      <lib org="com.googlecode.simpleopenni" revision="1.96" resolved="true" released="true"/>
+      <lib org="com.pi4j.pi4j" revision="0.0.5" resolved="true" released="true"/>
+      <lib org="com.strobel.decompiler" revision="0.3.2" resolved="true" released="true"/>
+      <lib org="com.sun.java3d" revision="1.5.1" resolved="true" released="true"/>
+      <lib org="com.sun.jna" revision="3.2.2" resolved="true" released="true"/>
+      <lib org="com.sun.speech.freetts" revision="1.2" resolved="true" released="true"/>
+      <lib org="com.wolfram.alpha" revision="1.1" resolved="true" released="true"/>
+      <lib org="edu.cmu.sphinx" revision="4-1.0beta6" resolved="true" released="true"/>
+      <lib org="edu.northwestern.topcodes" revision="1.0" resolved="true" released="true"/>
+      <lib org="gnu.io.rxtx" revision="2.1-7r2" resolved="true" released="true"/>
+      <lib org="it.sauronsoftware.cron4j" revision="2.2.5" resolved="true" released="true"/>
+      <lib org="javaFlacEncoder.FLAC_FileEncoder" revision="0.1" resolved="true" released="true"/>
+      <lib org="javax.speech.recognition" revision="1.0" resolved="true" released="true"/>
+      <lib org="javax.vecmath" revision="1.5.1" resolved="true" released="true"/>
+      <lib org="javazoom.jl.player" revision="1.0.1" resolved="true" released="true"/>
+      <lib org="net.java.games.jinput" revision="20120914" resolved="true" released="true"/>
+      <lib org="net.sourceforge.opencv" revision="2.4.6" resolved="true" released="true"/>
+      <lib org="net.sourceforge.tess4j" revision="1.1" resolved="true" released="true"/>
+      <lib org="org.apache.commons.httpclient" revision="4.2.5" resolved="true" released="true"/>
+      <lib org="org.drjava.java" revision="20120818" resolved="true" released="true"/>
+      <lib org="org.java_websocket.websocket" revision="1.2" resolved="true" released="true"/>
+      <lib org="org.jfugue.music" revision="4.0.3" resolved="true" released="true"/>
+      <lib org="org.jivesoftware.smack" revision="3.3.0" resolved="true" released="true"/>
+      <lib org="org.op.chess" revision="1.0.0" resolved="true" released="true"/>
+      <lib org="org.python.core" revision="2.5.2" resolved="true" released="true"/>
+      <lib org="org.tritonus.share.sampled.floatsamplebuffer" revision="0.3.6" resolved="true" released="true"/>
+      <lib org="org.twitter4j.twitter" revision="3.0.5" resolved="true" released="true"/>
+      <lib org="ph.com.alexan.aceduino" revision="1.0" resolved="true" released="true"/>
+      <lib org="wiiuse.wiimote" revision="0.12b" resolved="true" released="true"/>
    </thirdPartyLibs>
 </ServiceData>
