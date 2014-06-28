@@ -24,6 +24,8 @@
       </serviceType>
       <serviceType name="org.myrobotlab.service.Arduino" description="The Arduino service is used to communicate and control the very popular Arduino micro-controller">
          <dependencies>
+		<org>org.fife.autocomplete</org>
+		<org>org.fife.rsyntaxtextarea</org>                     
             <org>gnu.io.rxtx</org>
             <org>cc.arduino</org>
          </dependencies>
@@ -239,6 +241,8 @@
       <serviceType name="org.myrobotlab.service.Python" description="scripting engine and IDE. All services are controllable through Python.">
          <dependencies>
             <org>org.python.core</org>
+            <org>org.fife.autocomplete</org>
+            <org>org.fife.rsyntaxtextarea</org>            
          </dependencies>
       </serviceType>
       <serviceType name="org.myrobotlab.service.RasPi" description="a service to allow access to the Raspberry Pi&apos;s GPIO and I2C offered in Pi4J">
@@ -461,6 +465,8 @@
       <lib org="net.sourceforge.tess4j" revision="1.1" resolved="false" released="true"/>
       <lib org="org.apache.commons.httpclient" revision="4.2.5" resolved="false" released="true"/>
       <lib org="org.drjava.java" revision="20120818" resolved="false" released="true"/>
+      <lib org="org.fife.autocomplete" revision="2.0.4" resolved="false" released="true"/>
+      <lib org="org.fife.rsyntaxtextarea" revision="2.0.4.1" resolved="false" released="true"/>
       <lib org="org.java_websocket.websocket" revision="1.2" resolved="false" released="true"/>
       <lib org="org.jfugue.music" revision="4.0.3" resolved="false" released="true"/>
       <lib org="org.jivesoftware.smack" revision="3.3.0" resolved="false" released="true"/>
@@ -468,7 +474,7 @@
       <lib org="org.python.core" revision="2.5.2" resolved="false" released="true"/>
       <lib org="org.tritonus.share.sampled.floatsamplebuffer" revision="0.3.6" resolved="false" released="true"/>
       <lib org="org.twitter4j.twitter" revision="3.0.5" resolved="false" released="true"/>
-      <lib org="ph.com.alexan.aceduino" revision="1.0" resolved="false" released="true"/>
+      <lib org="ph.com.alexan.aceduino" revision="1.0" resolved="false" released="true"/>      
       <lib org="wiiuse.wiimote" revision="0.12b" resolved="false" released="true"/>
    </thirdPartyLibs>
 </ServiceData>
