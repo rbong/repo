@@ -13,5 +13,12 @@
          <artifact name="SimpleOpenNI32" type="dll" conf="x86.32.windows"/>
          <artifact name="SimpleOpenNI64" type="dll" conf="x86.64.windows"/>
          
+         <!-- zips to native -->
+                
+	  <artifact name="osx" type="zip" conf="x86.64.mac"/>
+	  <artifact name="linux64" type="zip" conf="x86.64.linux"/>
+	  <artifact name="win32" type="zip" conf="x86.32.windows"/>
+	  <artifact name="win64" type="zip" conf="x86.64.windows"/>
+
          </publications>
 </ivy-module>
