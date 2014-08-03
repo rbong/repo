@@ -139,6 +139,10 @@
             <org>org.jivesoftware.smack</org>
          </dependencies>
       </serviceType>
+      <serviceType name="org.myrobotlab.service.InMoovGestureCreator" description="service to control the InMoov robot">
+         <dependencies>
+         </dependencies>
+      </serviceType>
       <serviceType name="org.myrobotlab.service.InMoovHead" description="service to control the InMoov robot">
          <dependencies>
             <org>com.sun.speech.freetts</org>
