@@ -243,6 +243,11 @@
             <org>org.alicebot.ab</org>
          </dependencies>
       </serviceType>
+      <serviceType name="org.myrobotlab.service.ProgramAB" description="ProgramAB AIML 2.0 Chat bot service">
+         <dependencies>
+            <org>org.alicebot.ab</org>
+         </dependencies>
+      </serviceType>
       <serviceType name="org.myrobotlab.service.Propeller" description="service for the Propeller micro-controller">
          <dependencies>
             <org>gnu.io.rxtx</org>
