@@ -237,6 +237,11 @@
             <org>com.sun.java3d</org>
          </dependencies>
       </serviceType>
+      <serviceType name="org.myrobotlab.service.ProgramAB" description="ProgramAB AIML 2.0 Chat bot service">
+         <dependencies>
+            <org>org.alicebot.ab</org>
+         </dependencies>
+      </serviceType>
       <serviceType name="org.myrobotlab.service.Propeller" description="service for the Propeller micro-controller">
          <dependencies>
             <org>gnu.io.rxtx</org>
@@ -469,6 +474,7 @@
       <lib org="net.java.games.jinput" revision="20120914" resolved="false" released="true"/>
       <lib org="net.sourceforge.opencv" revision="2.4.6" resolved="false" released="true"/>
       <lib org="net.sourceforge.tess4j" revision="1.1" resolved="false" released="true"/>
+      <lib org="org.alicebot.ab" revision="0.0.6.26" resolved="true" released="true"/>
       <lib org="org.apache.commons.httpclient" revision="4.2.5" resolved="false" released="true"/>
       <lib org="org.drjava.java" revision="20120818" resolved="false" released="true"/>
       <lib org="org.fife.autocomplete" revision="2.0.4" resolved="false" released="true"/>
