@@ -6,6 +6,7 @@
         <include url="https://raw.githubusercontent.com/MyRobotLab/repo/master/ivyconfigurations.xml"/>
     </configurations>
     <publications>
-        <artifact name="ProgramAB" type="zip" ext="zip" conf="*"/>
+        <artifact conf="*" name="ProgramAB" type="zip" ext="zip" />
+        <artifact conf="*" name="Ab" type="jar" />
      </publications>
 </ivy-module>
