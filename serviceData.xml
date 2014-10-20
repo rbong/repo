@@ -1,13 +1,5 @@
 <ServiceData>
    <serviceTypes>
-      <serviceType name="org.myrobotlab.service.ACEduinoMotorShield" description="ACEduino Motor Shield for Arduino">
-         <dependencies>
-            <org>gnu.io.rxtx</org>
-            <org>cc.arduino</org>
-            <org>ph.com.alexan.aceduino</org>
-         </dependencies>
-      </serviceType>
-      <!-- <serviceType name="org.myrobotlab.service.AWTRobot" description="allows screen capture, and control of mouse and keyboard"/> -->
       <serviceType name="org.myrobotlab.service.Adafruit16CServoDriver" description="AdaFruit 16-channel 12-bit PWM/servo driver - I2C interface">
          <dependencies>
             <org>gnu.io.rxtx</org>
@@ -60,11 +52,6 @@
          </dependencies>
       </serviceType>
       <serviceType name="org.myrobotlab.service.GUIService" description="a swing graphical user interface for MyRobotLab"/>
-      <serviceType name="org.myrobotlab.service.GestureRecognition" description="uses OpenNI NITE for tracking gestures">
-         <dependencies>
-            <org>com.googlecode.simpleopenni</org>
-         </dependencies>
-      </serviceType>
       <serviceType name="org.myrobotlab.service.GoogleSTT" description="uses OpenNI NITE for tracking gestures">
          <dependencies>
             <org>javaFlacEncoder.FLAC_FileEncoder</org>
@@ -232,12 +219,6 @@
             <org>javazoom.jl.player</org>
          </dependencies>
       </serviceType>
-      <serviceType name="org.myrobotlab.service.PointCloud" description="Uses OpenNI to generated a 3D pointcloud, will be useful in SLAM">
-         <dependencies>
-            <org>com.googlecode.simpleopenni</org>
-            <org>com.sun.java3d</org>
-         </dependencies>
-      </serviceType>
       <serviceType name="org.myrobotlab.service.ProgramAB" description="ProgramAB AIML 2.0 Chat bot service">
          <dependencies>
             <org>org.alicebot.ab</org>
@@ -265,6 +246,8 @@
          <dependencies>
             <org>gnu.io.rxtx</org>
          </dependencies>
+      </serviceType>
+      <serviceType name="org.myrobotlab.service.Shoutbox" description="shoutbox for myrobotlab.org">
       </serviceType>
       <serviceType name="org.myrobotlab.service.SLAMBad" description="3D Simulator based on Simbad">
          <dependencies>
@@ -362,11 +345,12 @@
          <serviceTypes>org.myrobotlab.service.WebGUI</serviceTypes>
       </category>
       <category name="control">
-         <!-- <serviceTypes>org.myrobotlab.service.AWTRobot</serviceTypes> -->
          <serviceTypes>org.myrobotlab.service.Keyboard</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Joystick</serviceTypes>
          <serviceTypes>org.myrobotlab.service.InverseKinematics</serviceTypes>
          <serviceTypes>org.myrobotlab.service.PID</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.PickToLight</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.PID2</serviceTypes>
       </category>
       <category name="display">
          <serviceTypes>org.myrobotlab.service.GUIService</serviceTypes>
@@ -378,6 +362,7 @@
       <category name="intelligence">
          <serviceTypes>org.myrobotlab.service.CleverBot</serviceTypes>
          <serviceTypes>org.myrobotlab.service.ChessGame</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.ProgramAB</serviceTypes>
          <serviceTypes>org.myrobotlab.service.TesseractOCR</serviceTypes>
          <serviceTypes>org.myrobotlab.service.WolframAlpha</serviceTypes>
       </category>
@@ -390,6 +375,7 @@
       <category name="motors">
          <serviceTypes>org.myrobotlab.service.AdafruitMotorShield</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Motor</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Stepper</serviceTypes>
       </category>
       <category name="programming">
          <serviceTypes>org.myrobotlab.service.Python</serviceTypes>
@@ -403,6 +389,7 @@
          <serviceTypes>org.myrobotlab.service.InMoovHand</serviceTypes>
          <serviceTypes>org.myrobotlab.service.InMoovArm</serviceTypes>
          <serviceTypes>org.myrobotlab.service.InMoovTorso</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.InMoovGestureCreator</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Plantoid</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Roomba</serviceTypes>
       </category>
@@ -411,8 +398,8 @@
       </category>
       <category name="sensors">
          <serviceTypes>org.myrobotlab.service.Arduino</serviceTypes>
-         <serviceTypes>org.myrobotlab.service.PointCloud</serviceTypes>
          <serviceTypes>org.myrobotlab.service.SensorMonitor</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.UltrasonicSensor</serviceTypes>
          <serviceTypes>org.myrobotlab.service.Wii</serviceTypes>
       </category>
       <category name="shields">
@@ -425,7 +412,7 @@
       </category>
       <category name="social">
          <serviceTypes>org.myrobotlab.service.Twitter</serviceTypes>
-         <serviceTypes>org.myrobotlab.service.Drupal</serviceTypes>
+         <serviceTypes>org.myrobotlab.service.Shoutbox</serviceTypes>
          <serviceTypes>org.myrobotlab.service.CleverBot</serviceTypes>
       </category>
       <category name="speech recognition">
@@ -441,7 +428,6 @@
       </category>
       <category name="vision">
          <serviceTypes>org.myrobotlab.service.Cortex</serviceTypes>
-         <serviceTypes>org.myrobotlab.service.GestureRecognition</serviceTypes>
          <serviceTypes>org.myrobotlab.service.OpenCV</serviceTypes>
          <serviceTypes>org.myrobotlab.service.OpenNI</serviceTypes>
          <serviceTypes>org.myrobotlab.service.IPCamera</serviceTypes>
