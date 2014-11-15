@@ -224,6 +224,11 @@
             <org>org.alicebot.ab</org>
          </dependencies>
       </serviceType>
+      <serviceType name="org.apache.solr" description="Apache Solr client libraries">
+         <dependencies>
+            <org>org.apache.solr</org>
+         </dependencies>
+      </serviceType>
       <serviceType name="org.myrobotlab.service.Propeller" description="service for the Propeller micro-controller">
          <dependencies>
             <org>gnu.io.rxtx</org>
@@ -434,6 +439,9 @@
          <serviceTypes>org.myrobotlab.service.Tracking</serviceTypes>
          <serviceTypes>org.myrobotlab.service.TopCodes</serviceTypes>
       </category>
+      <category name="search engine">
+         <serviceTypes>org.myrobotlab.service.SolrService</serviceTypes>
+      </category>
    </categories>
    <thirdPartyLibs>
       <lib org="be.hogent.tarsos" revision="1.7" resolved="false" released="true"/>
@@ -463,6 +471,7 @@
       <lib org="net.sourceforge.tess4j" revision="1.1" resolved="false" released="true"/>
       <lib org="org.alicebot.ab" revision="0.0.6.26" resolved="false" released="true"/>
       <lib org="org.apache.commons.httpclient" revision="4.2.5" resolved="false" released="true"/>
+      <lib org="org.apache.solr" revision="4.10.2" resolved="false" released="true"/>
       <lib org="org.drjava.java" revision="20120818" resolved="false" released="true"/>
       <lib org="org.fife.autocomplete" revision="2.0.4" resolved="false" released="true"/>
       <lib org="org.fife.rsyntaxtextarea" revision="2.0.4.1" resolved="false" released="true"/>
