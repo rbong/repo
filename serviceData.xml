@@ -224,7 +224,7 @@
             <org>org.alicebot.ab</org>
          </dependencies>
       </serviceType>
-      <serviceType name="org.apache.solr" description="Apache Solr client libraries">
+      <serviceType name="org.apache.Solr" description="Apache Solr client libraries">
          <dependencies>
             <org>org.apache.solr</org>
          </dependencies>
