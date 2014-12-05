@@ -9,5 +9,5 @@
         <artifact name="LeapJava" type="jar"/>
         <artifact name="win64" type="zip" ext="zip" conf="x86.64.windows"/>
 
-         </publications>
+     </publications>
 </ivy-module>
