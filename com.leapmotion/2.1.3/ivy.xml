@@ -8,6 +8,10 @@
     <publications>
         <artifact name="LeapJava" type="jar"/>
         <artifact name="win64" type="zip" ext="zip" conf="x86.64.windows"/>
+        <artifact name="win32" type="zip" ext="zip" conf="x86.32.windows"/>
+        <artifact name="linux32" type="zip" ext="zip" conf="x86.32.linux"/>
+        <artifact name="linux64" type="zip" ext="zip" conf="x86.64.linux"/>
+        <artifact name="mac64" type="zip" ext="zip" conf="x86.64.mac"/>
 
-         </publications>
+     </publications>
 </ivy-module>

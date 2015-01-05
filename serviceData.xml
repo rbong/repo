@@ -455,6 +455,7 @@
       <lib org="com.googlecode.chatterbot" revision="1.2.1" resolved="false" released="true"/>
       <lib org="com.googlecode.javacv" revision="0.6" resolved="false" released="true"/>
       <lib org="com.googlecode.simpleopenni" revision="1.96" resolved="false" released="true"/>
+      <lib org="com.leapmotion" revision="2.1.3" resolved="false" released="true"/>
       <lib org="com.pi4j.pi4j" revision="0.0.5" resolved="false" released="true"/>
       <lib org="com.strobel.decompiler" revision="0.3.2" resolved="false" released="true"/>
       <lib org="com.sun.java3d" revision="1.5.1" resolved="false" released="true"/>
