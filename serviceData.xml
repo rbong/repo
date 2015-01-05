@@ -166,12 +166,6 @@
             <org>org.jfugue.music</org>
          </dependencies>
       </serviceType>
-      <serviceType name="org.myrobotlab.service.Java" description="Java IDE">
-         <dependencies>
-            <org>org.drjava.java</org>
-            <org>com.strobel.decompiler</org>
-         </dependencies>
-      </serviceType>
       <serviceType name="org.myrobotlab.service.Joystick" description="general joystick and gamepad service">
          <dependencies>
             <org>net.java.games.jinput</org>
@@ -394,7 +388,6 @@
       </category>
       <category name="programming">
          <serviceTypes>org.myrobotlab.service.Python</serviceTypes>
-         <serviceTypes>org.myrobotlab.service.Java</serviceTypes>
          <serviceTypes>org.myrobotlab.service.GUIService</serviceTypes>
       </category>
       <category name="robots">
