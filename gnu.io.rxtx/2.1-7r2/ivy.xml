@@ -31,5 +31,6 @@
         <artifact name="x86.64.windows/rxtxSerial64" type="native" ext="dll" conf="x86.64.windows"/>
         <artifact name="x86.64.windows/rxtxParallel" type="native" ext="dll" conf="x86.64.windows"/>
         <artifact name="x86.64.windows/rxtxParallel64" type="native" ext="dll" conf="x86.64.windows"/>
+        <artifact name="x86.64.windows" type="zip" ext="zip" conf="x86.64.windows"/>
         </publications>
 </ivy-module>
