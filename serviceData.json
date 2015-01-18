@@ -705,6 +705,18 @@
       "resolved": false,
       "released": true
     },
+    "org.fife.autocomplete": {
+      "org": "org.fife.autocomplete",
+      "revision": "2.0.4",
+      "resolved": false,
+      "released": true
+    },
+    "org.fife.rsyntaxtextarea": {
+      "org": "org.fife.rsyntaxtextarea",
+      "revision": "2.0.4.1",
+      "resolved": false,
+      "released": true
+    },
     "org.java_websocket.websocket": {
       "org": "org.java_websocket.websocket",
       "revision": "1.2",
