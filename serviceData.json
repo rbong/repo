@@ -74,10 +74,6 @@
         "it.sauronsoftware.cron4j"
       ]
     },
-    "org.myrobotlab.service.Drupal": {
-      "name": "org.myrobotlab.service.Drupal",
-      "description": "used as a general template"
-    },
     "org.myrobotlab.service.GPS": {
       "name": "org.myrobotlab.service.GPS",
       "description": "The GPS service"
@@ -341,10 +337,6 @@
       "name": "org.myrobotlab.service.ServoOrchestrator",
       "description": "organize your Servo-movements"
     },
-    "org.myrobotlab.service.Shoutbox": {
-      "name": "org.myrobotlab.service.Shoutbox",
-      "description": "shoutbox server for myrobotlab"
-    },
     "org.myrobotlab.service.SoccerGame": {
       "name": "org.myrobotlab.service.SoccerGame",
       "description": "robot soccer"
@@ -384,6 +376,13 @@
       "dependencies": [
         "net.sourceforge.tess4j",
         "com.sun.jna"
+      ]
+    },
+   "org.myrobotlab.service.Test": {
+      "name": "org.myrobotlab.service.Test",
+      "description": "Testing service for myrobotlab",
+      "dependencies": [
+        "org.junit"
       ]
     },
     "org.myrobotlab.service.ThingSpeak": {
@@ -559,6 +558,13 @@
         "org.myrobotlab.service.Roomba"
       ]
     },
+    "search engine": {
+      "name": "search engine",
+      "description": "",
+      "serviceTypes": [
+        "org.myrobotlab.service.SolrService"
+      ]
+    },
     "security": {
       "name": "security",
       "description": "",
@@ -635,13 +641,6 @@
         "org.myrobotlab.service.IPCamera",
         "org.myrobotlab.service.Tracking",
         "org.myrobotlab.service.TopCodes"
-      ]
-    },
-    "search engine": {
-      "name": "search engine",
-      "description": "",
-      "serviceTypes": [
-        "org.myrobotlab.service.SolrService"
       ]
     }
   },
