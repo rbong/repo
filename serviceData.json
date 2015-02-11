@@ -59,6 +59,10 @@
         "com.googlecode.chatterbot"
       ]
     },
+    "org.myrobotlab.service.CLI": {
+      "name": "org.myrobotlab.service.CLI",
+      "description": "command line interpreter"
+    },
     "org.myrobotlab.service.Clock": {
       "name": "org.myrobotlab.service.Clock",
       "description": "used to generate pulses"
