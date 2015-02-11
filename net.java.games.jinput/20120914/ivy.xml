@@ -24,5 +24,11 @@
 
         <artifact name="x86.64.mac/libjinput-osx" type="native" ext="jnilib" conf="x86.64.mac"/>
         <artifact name="x86.64.mac/libjinput-osx" type="native" ext="jnilib" conf="x86.32.mac"/>
+        
+        <!-- new repo begin -->
+        <artifact name="x86.64.windows" type="zip" ext="zip" conf="x86.64.windows"/>
+        
+        <!-- new repo end -->
+        
     </publications>
 </ivy-module>
