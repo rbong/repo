@@ -437,6 +437,13 @@
         "wiiuse.wiimote"
       ]
     },
+    "org.myrobotlab.service.WiiDAR": {
+      "name": "org.myrobotlab.service.Wii",
+      "description": "<html>wiidar</html>",
+      "dependencies": [
+        "wiiuse.wiimote"
+      ]
+    },
     "org.myrobotlab.service.WolframAlpha": {
       "name": "org.myrobotlab.service.WolframAlpha",
       "description": "Wolfram Alpha Service",
