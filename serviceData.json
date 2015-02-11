@@ -347,7 +347,10 @@
     },
     "org.myrobotlab.service.Solr": {
       "name": "org.myrobotlab.service.Solr",
-      "description": "Solr Service - Open source search engine."
+      "description": "Solr Service - Open source search engine.",
+      "dependencies": [
+        "org.apache.solr"
+      ]
     },
     "org.myrobotlab.service.Speech": {
       "name": "org.myrobotlab.service.Speech",
