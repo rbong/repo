@@ -14,6 +14,10 @@
         "com.adafruit.motorshield"
       ]
     },
+    "org.myrobotlab.service.AndroidVoiceRecognition": {
+      "name": "org.myrobotlab.service.AdafruitMotorShield",
+      "description": "Server to accept commands from Android Speech Recognition"
+    },
     "org.myrobotlab.service.Arduino": {
       "name": "org.myrobotlab.service.Arduino",
       "description": "This service interfaces with an Arduino micro-controller.",
@@ -237,10 +241,6 @@
     "org.myrobotlab.service.Plantoid": {
       "name": "org.myrobotlab.service.Plantoid",
       "description": "the plantoid service"
-    },
-    "org.myrobotlab.service.PlayerStage": {
-      "name": "org.myrobotlab.service.PlayerStage",
-      "description": "stubbed out for Player Stage - partially implemented"
     },
     "org.myrobotlab.service.ProgramAB": {
       "name": "org.myrobotlab.service.ProgramAB",
@@ -501,6 +501,8 @@
       "serviceTypes": [
         "org.myrobotlab.service.Keyboard",
         "org.myrobotlab.service.Joystick",
+        "org.myrobotlab.service.Runtime",
+        "org.myrobotlab.service.CLI",
         "org.myrobotlab.service.InverseKinematics",
         "org.myrobotlab.service.PID",
         "org.myrobotlab.service.PickToLight",
@@ -545,6 +547,7 @@
       "description": "",
       "serviceTypes": [
         "org.myrobotlab.service.AdafruitMotorShield",
+        "org.myrobotlab.service.Sabertooth",
         "org.myrobotlab.service.Motor",
         "org.myrobotlab.service.Stepper"
       ]
@@ -554,6 +557,7 @@
       "description": "",
       "serviceTypes": [
         "org.myrobotlab.service.Python",
+        "org.myrobotlab.service.CLI",
         "org.myrobotlab.service.GUIService"
       ]
     },
@@ -561,8 +565,10 @@
       "name": "robots",
       "description": "",
       "serviceTypes": [
+        "org.myrobotlab.service.Arm",
         "org.myrobotlab.service.Houston",
         "org.myrobotlab.service.InMoov",
+        "org.myrobotlab.service.Sweety",
         "org.myrobotlab.service.InMoovHead",
         "org.myrobotlab.service.InMoovHand",
         "org.myrobotlab.service.InMoovArm",
@@ -591,6 +597,8 @@
       "description": "",
       "serviceTypes": [
         "org.myrobotlab.service.Arduino",
+        "org.myrobotlab.service.LeapMotion2",
+        "org.myrobotlab.service.Pingdar",
         "org.myrobotlab.service.SensorMonitor",
         "org.myrobotlab.service.UltrasonicSensor",
         "org.myrobotlab.service.Wii"
@@ -600,7 +608,6 @@
       "name": "shields",
       "description": "",
       "serviceTypes": [
-        "org.myrobotlab.service.ACEduinoMotorShield",
         "org.myrobotlab.service.Adafruit16CServoDriver",
         "org.myrobotlab.service.AdafruitMotorShield"
       ]
@@ -609,7 +616,8 @@
       "name": "simulators",
       "description": "",
       "serviceTypes": [
-        "org.myrobotlab.service.SLAMBad"
+        "org.myrobotlab.service.SLAMBad",
+        "org.myrobotlab.service.Blender"
       ]
     },
     "social": {
@@ -683,12 +691,6 @@
       "resolved": false,
       "released": true
     },
-    "com.centralnexus.joystick": {
-      "org": "com.centralnexus.joystick",
-      "revision": "0.7",
-      "resolved": false,
-      "released": true
-    },
     "com.getflourish.googlestt": {
       "org": "com.getflourish.googlestt",
       "revision": "1.0",
@@ -746,12 +748,6 @@
     "com.mxgraph.jgraph": {
       "org": "com.mxgraph.jgraph",
       "revision": "1.6.1.2",
-      "resolved": false,
-      "released": true
-    },
-    "com.oracle.mysql": {
-      "org": "com.oracle.mysql",
-      "revision": "5.1.32",
       "resolved": false,
       "released": true
     },
@@ -1028,12 +1024,6 @@
     "org.twitter4j.twitter": {
       "org": "org.twitter4j.twitter",
       "revision": "3.0.5",
-      "resolved": false,
-      "released": true
-    },
-    "ph.com.alexan.aceduino": {
-      "org": "ph.com.alexan.aceduino",
-      "revision": "1.0",
       "resolved": false,
       "released": true
     },
