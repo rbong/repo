@@ -49,6 +49,10 @@
       "name": "org.myrobotlab.service.Blender",
       "description": "used as a general blender"
     },
+    "org.myrobotlab.service.CLI": {
+      "name": "org.myrobotlab.service.CLI",
+      "description": "command line interpreter"
+    },
     "org.myrobotlab.service.ChessGame": {
       "name": "org.myrobotlab.service.ChessGame",
       "description": "used to generate pulses",
@@ -62,10 +66,6 @@
       "dependencies": [
         "com.googlecode.chatterbot"
       ]
-    },
-    "org.myrobotlab.service.CLI": {
-      "name": "org.myrobotlab.service.CLI",
-      "description": "command line interpreter"
     },
     "org.myrobotlab.service.Clock": {
       "name": "org.myrobotlab.service.Clock",
@@ -97,10 +97,6 @@
         "javaFlacEncoder.FLAC_FileEncoder",
         "org.tritonus.share.sampled.floatsamplebuffer"
       ]
-    },
-    "org.myrobotlab.service.Graphics": {
-      "name": "org.myrobotlab.service.Graphics",
-      "description": "a graphics service encapsulating Java swing graphic methods"
     },
     "org.myrobotlab.service.HTTPClient": {
       "name": "org.myrobotlab.service.HTTPClient",
@@ -143,10 +139,6 @@
     "org.myrobotlab.service.InMoovTorso": {
       "name": "org.myrobotlab.service.InMoovTorso",
       "description": "the InMoov Arm Service"
-    },
-    "org.myrobotlab.service.Incubator": {
-      "name": "org.myrobotlab.service.Incubator",
-      "description": "used as a general template"
     },
     "org.myrobotlab.service.InverseKinematics": {
       "name": "org.myrobotlab.service.InverseKinematics",
@@ -195,6 +187,13 @@
     "org.myrobotlab.service.MouthControl": {
       "name": "org.myrobotlab.service.MouthControl",
       "description": "mouth movements based on spoken text"
+    },
+    "org.myrobotlab.service.OculusRift": {
+          "name": "org.myrobotlab.service.OculusRift",
+          "description": "service to interface with the OculusRift",
+          "dependencies": [
+	          "org.saintandreas.jovr"
+      ]
     },
     "org.myrobotlab.service.OpenCV": {
       "name": "org.myrobotlab.service.OpenCV",
@@ -256,10 +255,6 @@
         "org.alicebot.ab"
       ]
     },
-    "org.myrobotlab.service.Proxy": {
-      "name": "org.myrobotlab.service.Proxy",
-      "description": "a Proxy service capable of proxying classes which can not or should not be created"
-    },
     "org.myrobotlab.service.Python": {
       "name": "org.myrobotlab.service.Python",
       "description": "Python IDE",
@@ -269,20 +264,12 @@
         "org.fife.rsyntaxtextarea"
       ]
     },
-    "org.myrobotlab.service.ROS": {
-      "name": "org.myrobotlab.service.ROS",
-      "description": "used as a general template"
-    },
     "org.myrobotlab.service.RasPi": {
       "name": "org.myrobotlab.service.RasPi",
       "description": "Raspberry Pi service used for accessing specific RasPi hardware such as I2C",
       "dependencies": [
         "com.pi4j.pi4j"
       ]
-    },
-    "org.myrobotlab.service.Red5": {
-      "name": "org.myrobotlab.service.Red5",
-      "description": "Red5 video/audio streaming service"
     },
     "org.myrobotlab.service.RemoteAdapter": {
       "name": "org.myrobotlab.service.RemoteAdapter",
@@ -341,10 +328,6 @@
       "name": "org.myrobotlab.service.ServoOrchestrator",
       "description": "organize your Servo-movements"
     },
-    "org.myrobotlab.service.SoccerGame": {
-      "name": "org.myrobotlab.service.SoccerGame",
-      "description": "robot soccer"
-    },
     "org.myrobotlab.service.Solr": {
       "name": "org.myrobotlab.service.Solr",
       "description": "Solr Service - Open source search engine.",
@@ -385,13 +368,6 @@
         "com.sun.jna"
       ]
     },
-   "org.myrobotlab.service.Test": {
-      "name": "org.myrobotlab.service.Test",
-      "description": "Testing service for myrobotlab",
-      "dependencies": [
-        "org.junit"
-      ]
-    },
     "org.myrobotlab.service.ThingSpeak": {
       "name": "org.myrobotlab.service.ThingSpeak",
       "description": "used as a general template"
@@ -406,10 +382,6 @@
     "org.myrobotlab.service.Tracking": {
       "name": "org.myrobotlab.service.Tracking",
       "description": "proportional control, tracking, and translation"
-    },
-    "org.myrobotlab.service.TweedleBot": {
-      "name": "org.myrobotlab.service.TweedleBot",
-      "description": "<html>used to encapsulate many of the functions and formulas regarding 2 motor platforms.<br>encoders and other feedback mechanisms can be added to provide heading, location and other information</html>"
     },
     "org.myrobotlab.service.Twitter": {
       "name": "org.myrobotlab.service.Twitter",
@@ -470,6 +442,7 @@
       "serviceTypes": [
         "org.myrobotlab.service.Motor",
         "org.myrobotlab.service.Servo",
+        "org.myrobotlab.service.ServoOrchestrator",        
         "org.myrobotlab.service.MouthControl",
         "org.myrobotlab.service.PID"
       ]
@@ -507,6 +480,13 @@
         "org.myrobotlab.service.PID",
         "org.myrobotlab.service.PickToLight",
         "org.myrobotlab.service.PID2"
+      ]
+    },
+    "data": {
+      "name": "data",
+      "description": "",
+      "serviceTypes": [
+        "org.myrobotlab.service.MQTT"
       ]
     },
     "display": {
@@ -574,7 +554,9 @@
         "org.myrobotlab.service.InMoovArm",
         "org.myrobotlab.service.InMoovTorso",
         "org.myrobotlab.service.InMoovGestureCreator",
+        "org.myrobotlab.service.RobotPlatform",
         "org.myrobotlab.service.Plantoid",
+        "org.myrobotlab.service.TweedleBot",
         "org.myrobotlab.service.Roomba"
       ]
     },
@@ -582,7 +564,7 @@
       "name": "search engine",
       "description": "",
       "serviceTypes": [
-        "org.myrobotlab.service.SolrService"
+        "org.myrobotlab.service.Solr"
       ]
     },
     "security": {
@@ -600,6 +582,7 @@
         "org.myrobotlab.service.LeapMotion2",
         "org.myrobotlab.service.Pingdar",
         "org.myrobotlab.service.SensorMonitor",
+        "org.myrobotlab.service.GPS",        
         "org.myrobotlab.service.UltrasonicSensor",
         "org.myrobotlab.service.Wii"
       ]
@@ -625,7 +608,6 @@
       "description": "",
       "serviceTypes": [
         "org.myrobotlab.service.Twitter",
-        "org.myrobotlab.service.Shoutbox",
         "org.myrobotlab.service.CleverBot"
       ]
     },
@@ -667,12 +649,6 @@
     }
   },
   "dependencyTypes": {
-    "be.hogent.tarsos": {
-      "org": "be.hogent.tarsos",
-      "revision": "1.7",
-      "resolved": false,
-      "released": true
-    },
     "cc.arduino": {
       "org": "cc.arduino",
       "revision": "1.0",
@@ -691,30 +667,6 @@
       "resolved": false,
       "released": true
     },
-    "com.getflourish.googlestt": {
-      "org": "com.getflourish.googlestt",
-      "revision": "1.0",
-      "resolved": false,
-      "released": true
-    },
-    "com.github.recognito": {
-      "org": "com.github.recognito",
-      "revision": "0.1.0",
-      "resolved": false,
-      "released": true
-    },
-    "com.goodrobots": {
-      "org": "com.goodrobots",
-      "revision": "1.0.2-SNAPSHOT",
-      "resolved": false,
-      "released": true
-    },
-    "com.google.gson": {
-      "org": "com.google.gson",
-      "revision": "2.3.1",
-      "resolved": false,
-      "released": true
-    },
     "com.googlecode.chatterbot": {
       "org": "com.googlecode.chatterbot",
       "revision": "1.2.1",
@@ -724,12 +676,6 @@
     "com.googlecode.javacv": {
       "org": "com.googlecode.javacv",
       "revision": "0.6",
-      "resolved": false,
-      "released": true
-    },
-    "com.googlecode.jssc": {
-      "org": "com.googlecode.jssc",
-      "revision": "0.9.0",
       "resolved": false,
       "released": true
     },
@@ -745,21 +691,9 @@
       "resolved": false,
       "released": true
     },
-    "com.mxgraph.jgraph": {
-      "org": "com.mxgraph.jgraph",
-      "revision": "1.6.1.2",
-      "resolved": false,
-      "released": true
-    },
     "com.pi4j.pi4j": {
       "org": "com.pi4j.pi4j",
       "revision": "0.0.5",
-      "resolved": false,
-      "released": true
-    },
-    "com.strobel.decompiler": {
-      "org": "com.strobel.decompiler",
-      "revision": "0.3.2",
       "resolved": false,
       "released": true
     },
@@ -772,12 +706,6 @@
     "com.sun.jna": {
       "org": "com.sun.jna",
       "revision": "3.2.2",
-      "resolved": false,
-      "released": true
-    },
-    "com.sun.mail": {
-      "org": "com.sun.mail",
-      "revision": "1.4.5",
       "resolved": false,
       "released": true
     },
@@ -811,12 +739,6 @@
       "resolved": false,
       "released": true
     },
-    "io.netty": {
-      "org": "io.netty",
-      "revision": "4.0.19",
-      "resolved": false,
-      "released": true
-    },
     "it.sauronsoftware.cron4j": {
       "org": "it.sauronsoftware.cron4j",
       "revision": "2.2.5",
@@ -826,12 +748,6 @@
     "javaFlacEncoder.FLAC_FileEncoder": {
       "org": "javaFlacEncoder.FLAC_FileEncoder",
       "revision": "0.1",
-      "resolved": false,
-      "released": true
-    },
-    "javaclient3.playerstage": {
-      "org": "javaclient3.playerstage",
-      "revision": "3",
       "resolved": false,
       "released": true
     },
@@ -859,12 +775,6 @@
       "resolved": false,
       "released": true
     },
-    "javazoom.spi": {
-      "org": "javazoom.spi",
-      "revision": "1.9.5",
-      "resolved": false,
-      "released": true
-    },
     "net.java.games.jinput": {
       "org": "net.java.games.jinput",
       "revision": "20120914",
@@ -874,12 +784,6 @@
     "net.sourceforge.opencv": {
       "org": "net.sourceforge.opencv",
       "revision": "2.4.6",
-      "resolved": false,
-      "released": true
-    },
-    "net.sourceforge.simbad": {
-      "org": "net.sourceforge.simbad",
-      "revision": "1.4",
       "resolved": false,
       "released": true
     },
@@ -901,27 +805,9 @@
       "resolved": false,
       "released": true
     },
-    "org.apache.ivy": {
-      "org": "org.apache.ivy",
-      "revision": "2.4.0-rc1",
-      "resolved": false,
-      "released": true
-    },
-    "org.apache.log4j": {
-      "org": "org.apache.log4j",
-      "revision": "1.2.14",
-      "resolved": false,
-      "released": true
-    },
     "org.apache.solr": {
       "org": "org.apache.solr",
       "revision": "4.10.2",
-      "resolved": false,
-      "released": true
-    },
-    "org.drjava.java": {
-      "org": "org.drjava.java",
-      "revision": "20120818",
       "resolved": false,
       "released": true
     },
@@ -961,33 +847,15 @@
       "resolved": false,
       "released": true
     },
-    "org.jsoup": {
-      "org": "org.jsoup",
-      "revision": "1.7.3",
-      "resolved": false,
-      "released": true
-    },
     "org.junit": {
       "org": "org.junit",
       "revision": "4.11",
       "resolved": false,
       "released": true
     },
-    "org.myrobotlab.service.incubator": {
-      "org": "org.myrobotlab.service.incubator",
-      "revision": "1.0",
-      "resolved": false,
-      "released": true
-    },
     "org.op.chess": {
       "org": "org.op.chess",
       "revision": "1.0.0",
-      "resolved": false,
-      "released": true
-    },
-    "org.processing": {
-      "org": "org.processing",
-      "revision": "unknown",
       "resolved": false,
       "released": true
     },
@@ -1003,18 +871,6 @@
       "resolved": false,
       "released": true
     },
-    "org.simpleframework.xml": {
-      "org": "org.simpleframework.xml",
-      "revision": "2.7",
-      "resolved": false,
-      "released": true
-    },
-    "org.slf4j": {
-      "org": "org.slf4j",
-      "revision": "1.6.1",
-      "resolved": false,
-      "released": true
-    },
     "org.tritonus.share.sampled.floatsamplebuffer": {
       "org": "org.tritonus.share.sampled.floatsamplebuffer",
       "revision": "0.3.6",
@@ -1024,18 +880,6 @@
     "org.twitter4j.twitter": {
       "org": "org.twitter4j.twitter",
       "revision": "3.0.5",
-      "resolved": false,
-      "released": true
-    },
-    "se.comhem.chess": {
-      "org": "se.comhem.chess",
-      "revision": "1.1.2",
-      "resolved": false,
-      "released": true
-    },
-    "simbad.gui": {
-      "org": "simbad.gui",
-      "revision": "1.4",
       "resolved": false,
       "released": true
     },
