@@ -14,6 +14,10 @@
         "com.adafruit.motorshield"
       ]
     },
+    "org.myrobotlab.service.Agent": {
+      "name": "org.myrobotlab.service.Agent",
+      "description": "Controlling service for a MRL instance"
+    },
     "org.myrobotlab.service.AndroidVoiceRecognition": {
       "name": "org.myrobotlab.service.AdafruitMotorShield",
       "description": "Server to accept commands from Android Speech Recognition"
