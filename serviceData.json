@@ -92,7 +92,12 @@
     },
     "org.myrobotlab.service.GUIService": {
       "name": "org.myrobotlab.service.GUIService",
-      "description": "<html>Service used to graphically display and control other services</html>"
+      "description": "Service used to graphically display and control other services",
+      "dependencies": [
+           "org.fife.autocomplete",
+        "org.fife.rsyntaxtextarea",
+        "com.mxgraph.jgraph"
+      ]
     },
     "org.myrobotlab.service.GoogleSTT": {
       "name": "org.myrobotlab.service.GoogleSTT",
@@ -263,9 +268,7 @@
       "name": "org.myrobotlab.service.Python",
       "description": "Python IDE",
       "dependencies": [
-        "org.python.core",
-        "org.fife.autocomplete",
-        "org.fife.rsyntaxtextarea"
+        "org.python.core"
       ]
     },
     "org.myrobotlab.service.RasPi": {
