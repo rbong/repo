@@ -7,9 +7,9 @@
     </configurations>
     <publications>
         <artifact name="jovr-0.3.2.4" type="jar"/>
-        <artifact name="x86.64.windows" type="zip" ext="zip" conf="x86.64.windows"/>
-        <artifact name="x86.32.windows" type="zip" ext="zip" conf="x86.32.windows"/>
-        <artifact name="x86.64.linux" type="zip" ext="zip" conf="x86.64.linux"/>
-        <artifact name="x86.64.mac" type="zip" ext="zip" conf="x86.64.mac"/>
+        <artifact name="jovr.x86.64.windows" type="zip" ext="zip" conf="x86.64.windows"/>
+        <artifact name="jovr.x86.32.windows" type="zip" ext="zip" conf="x86.32.windows"/>
+        <artifact name="jovr.x86.64.linux" type="zip" ext="zip" conf="x86.64.linux"/>
+        <artifact name="jovr.x86.64.mac" type="zip" ext="zip" conf="x86.64.mac"/>
      </publications>
 </ivy-module>
