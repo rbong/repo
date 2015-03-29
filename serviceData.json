@@ -811,6 +811,15 @@
       "description": "used as a general template",
       "available": true
     },
+   "org.myrobotlab.service.VirtualDevice": {
+      "name": "org.myrobotlab.service.VirtualDevice",
+      "description": "virtual testing device",
+      "available": true,
+      "peers": {
+        "uart": "org.myrobotlab.service.Serial",
+        "logic": "org.myrobotlab.service.Python"
+      }
+    },
     "org.myrobotlab.service.WebGUI": {
       "name": "org.myrobotlab.service.WebGUI",
       "description": "The new web enabled GUIService 2.0 !",
