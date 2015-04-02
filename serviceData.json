@@ -220,7 +220,7 @@
       "description": "used as a general template",
       "available": true,
       "dependencies": [
-        "com.googlecode.javacv"
+        "org.bytedeco.javacv"
       ]
     },
     "org.myrobotlab.service.InMoov": {
@@ -440,7 +440,7 @@
       "description": "OpenCV (computer vision) service wrapping many of the functions and filters of OpenCV. ",
       "available": true,
       "dependencies": [
-        "com.googlecode.javacv",
+        "org.bytedeco.javacv",
         "net.sourceforge.opencv"
       ]
     },
@@ -1257,6 +1257,11 @@
       "revision": "0.6",
       "installed": false
     },
+    "org.bytedeco.javacv": {
+      "org": "org.bytedeco.javacv",
+      "revision": "0.10",
+      "installed": false
+    },
     "com.googlecode.jssc": {
       "org": "com.googlecode.jssc",
       "revision": "0.9.0",
@@ -1374,7 +1379,7 @@
     },
     "net.sourceforge.opencv": {
       "org": "net.sourceforge.opencv",
-      "revision": "2.4.6",
+      "revision": "2.4.10",
       "installed": false
     },
     "net.sourceforge.simbad": {
