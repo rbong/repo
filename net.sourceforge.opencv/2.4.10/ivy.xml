@@ -7,6 +7,11 @@
         <include url="https://raw.githubusercontent.com/MyRobotLab/repo/master/ivyconfigurations.xml"/>
     </configurations>
     <publications>
+    
+        <artifact name="haarcascades" type="zip" ext="zip" conf="*"/>
+        <artifact name="lbpcascades" type="zip" ext="zip" conf="*"/>
+        <artifact name="hogcascades" type="zip" ext="zip" conf="*"/>
+        
         <artifact name="opencv" type="jar" conf="*"/>
         <artifact name="opencv-linux-arm" type="jar" conf="armv6.hfp.32.linux"/>     
         <artifact name="opencv-windows-x86" type="jar" conf="x86.32.windows"/>
