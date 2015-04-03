@@ -43,6 +43,7 @@
       <serviceType name="org.myrobotlab.service.Cortex" description="visual processing and memory">
          <dependencies>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
          </dependencies>
       </serviceType>
@@ -68,6 +69,7 @@
             <org>org.apache.commons.httpclient</org>
             <org>javax.speech.recognition</org>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
             <org>edu.cmu.sphinx</org>
             <org>gnu.io.rxtx</org>
@@ -79,6 +81,7 @@
       <serviceType name="org.myrobotlab.service.IPCamera" description="service to control and retrieve a video feed from a ip camera. Foscam cameras currently supported">
          <dependencies>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
          </dependencies>
       </serviceType>
       <serviceType name="org.myrobotlab.service.InMoov" description="service to control the InMoov robot">
@@ -87,6 +90,7 @@
             <org>org.apache.commons.httpclient</org>
             <org>javax.speech.recognition</org>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
             <org>edu.cmu.sphinx</org>
             <org>gnu.io.rxtx</org>
@@ -102,6 +106,7 @@
             <org>org.apache.commons.httpclient</org>
             <org>javax.speech.recognition</org>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
             <org>edu.cmu.sphinx</org>
             <org>gnu.io.rxtx</org>
@@ -117,6 +122,7 @@
             <org>org.apache.commons.httpclient</org>
             <org>javax.speech.recognition</org>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
             <org>edu.cmu.sphinx</org>
             <org>gnu.io.rxtx</org>
@@ -136,6 +142,7 @@
             <org>org.apache.commons.httpclient</org>
             <org>javax.speech.recognition</org>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
             <org>edu.cmu.sphinx</org>
             <org>gnu.io.rxtx</org>
@@ -151,6 +158,7 @@
             <org>org.apache.commons.httpclient</org>
             <org>javax.speech.recognition</org>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
             <org>edu.cmu.sphinx</org>
             <org>gnu.io.rxtx</org>
@@ -183,6 +191,7 @@
       <serviceType name="org.myrobotlab.service.OpenCV" description="The OpenCV Service is a library of vision functions">
          <dependencies>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
          </dependencies>
       </serviceType>
@@ -210,6 +219,7 @@
             <org>org.apache.commons.httpclient</org>
             <org>javax.speech.recognition</org>
             <org>com.googlecode.javacv</org>
+            <org>org.bytedeco.javacv</org>
             <org>net.sourceforge.opencv</org>
             <org>edu.cmu.sphinx</org>
             <org>gnu.io.rxtx</org>
@@ -476,6 +486,7 @@
       <lib org="org.alicebot.ab" revision="0.0.6.26" resolved="false" released="true"/>
       <lib org="org.apache.commons.httpclient" revision="4.2.5" resolved="false" released="true"/>
       <lib org="org.apache.solr" revision="4.10.2" resolved="false" released="true"/>
+      <lib org="org.bytedeco.javacv" revision="0.10" resolved="false" released="true"/>
       <lib org="org.drjava.java" revision="20120818" resolved="false" released="true"/>
       <lib org="org.eclipse.paho" revision="1.0" resolved="false" released="true"/>
       <lib org="org.fife.autocomplete" revision="2.0.4" resolved="false" released="true"/>
