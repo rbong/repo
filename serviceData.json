@@ -80,19 +80,23 @@
     },
     "org.myrobotlab.service.Blender": {
       "name": "org.myrobotlab.service.Blender",
-      "description": "used as a general blender"
+      "description": "used as a general blender",
+      "available": true
     },
     "org.myrobotlab.service.CLI": {
       "name": "org.myrobotlab.service.CLI",
-      "description": "used as a general cli"
+      "description": "used as a general cli",
+      "available": true
     },
     "org.myrobotlab.service.ChatBot": {
       "name": "org.myrobotlab.service.ChatBot",
-      "description": "used as a general template"
+      "description": "used as a general template",
+      "available": true
     },
     "org.myrobotlab.service.ChessGame": {
       "name": "org.myrobotlab.service.ChessGame",
       "description": "used to generate pulses",
+      "available": true,
       "dependencies": [
         "org.op.chess"
       ]
