@@ -631,7 +631,8 @@
     },
     "org.myrobotlab.service.Servo": {
       "name": "org.myrobotlab.service.Servo",
-      "description": "basic servo service"
+      "description": "basic servo service",
+      "available": true
     },
     "org.myrobotlab.service.ServoOrchestrator": {
       "name": "org.myrobotlab.service.ServoOrchestrator",
