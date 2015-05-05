@@ -32,9 +32,9 @@
         "cli": "org.myrobotlab.service.CLI"
       }
     },
-    "org.myrobotlab.service.AndroidVoiceRecognition": {
-      "name": "org.myrobotlab.service.AndroidVoiceRecognition",
-      "description": "utilizing Android's Voice Recognition"
+    "org.myrobotlab.service.AndroidSpeechRecognition": {
+      "name": "org.myrobotlab.service.AndroidSpeechRecognition",
+      "description": "utilizing Android's Speech Recognition"
     },
     "org.myrobotlab.service.Arduino": {
       "name": "org.myrobotlab.service.Arduino",
@@ -1172,7 +1172,7 @@
     "speech recognition": {
       "name": "speech recognition",
       "serviceTypes": [
-        "org.myrobotlab.service.AndroidVoiceRecognition",
+        "org.myrobotlab.service.AndroidSpeechRecognition",
         "org.myrobotlab.service.GoogleSTT",
         "org.myrobotlab.service.SpeakerRecognition",
         "org.myrobotlab.service.SpeechRecognitionGoogle",
