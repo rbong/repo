@@ -1341,7 +1341,7 @@
     },
     "io.netty": {
       "org": "io.netty",
-      "revision": "4.0.19",
+      "revision": "3.10.0",
       "installed": false
     },
     "it.sauronsoftware.cron4j": {
