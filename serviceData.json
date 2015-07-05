@@ -626,7 +626,8 @@
       "description": "reads and writes serial data",
       "available": true,
       "dependencies": [
-        "gnu.io.rxtx"
+        "gnu.io.rxtx",
+        "com.googlecode.jssc"
       ]
     },
     "org.myrobotlab.service.Servo": {
@@ -1269,7 +1270,7 @@
     },
     "com.googlecode.jssc": {
       "org": "com.googlecode.jssc",
-      "revision": "0.9.0",
+      "revision": "2.8.0",
       "installed": false
     },
     "com.googlecode.simpleopenni": {
